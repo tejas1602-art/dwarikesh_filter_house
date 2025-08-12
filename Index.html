@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dwarikesh Filter House</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+}
+header {
+    background: linear-gradient(45deg, #0083b0, #00b4db);
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    animation: fadeIn 2s ease-in;
+}
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+header p {
+    margin: 5px 0 0;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: white;
+    color: #0083b0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+section {
+    display: none;
+    padding: 20px;
+}
+.product {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.5s ease;
+}
+.product h3 {
+    margin: 0 0 5px;
+}
+footer {
+    background: #0083b0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🚰 Dwarikesh Filter House</h1>
+    <p>Pandurang Complex, Shop No 7, Near Bus Stand</p>
+    <p>📞 9607604843</p>
+    <button onclick="showProducts()">View Products</button>
+</header>
+
+<section id="products">
+    <div class="product">
+        <h3>Water Filter Model A</h3>
+        <p>Price: ₹2,500</p>
+    </div>
+    <div class="product">
+        <h3>Water Filter Model B</h3>
+        <p>Price: ₹3,200</p>
+    </div>
+    <div class="product">
+        <h3>Filter Cartridge</h3>
+        <p>Price: ₹450</p>
+    </div>
+</section>
+
+<footer>
+    <a href="https://instagram.com/tejasahire_16" target="_blank">📷 Instagram</a>
+    <a href="https://wa.me/919607604843" target="_blank">💬 WhatsApp</a>
+</footer>
+
+<script>
+function showProducts() {
+    document.getElementById('products').style.display = 'block';
+    window.scrollTo({top: document.getElementById('products').offsetTop, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>
